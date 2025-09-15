@@ -46,11 +46,10 @@ setuptools.setup(
     },
     scripts=[],
     install_requires=[
-        'airio @ git+https://github.com/google/airio#egg=airio',
         'absl-py',
         'cached_property',
         'clu @ git+https://github.com/google/CommonLoopUtils#egg=clu',
-        'flax @ git+https://github.com/google/flax#egg=flax',
+        'flax==0.10.6',
         'fiddle >= 0.2.5',
         'gin-config',
         f'jax >= {_jax_version}',
@@ -62,8 +61,7 @@ setuptools.setup(
         'numpy',
         'optax @ git+https://github.com/deepmind/optax#egg=optax',
         'orbax-checkpoint >= 0.5',
-        'seqio @ git+https://github.com/google/seqio#egg=seqio',
-        'tensorflow-cpu',
+        'seqio @ git+https://github.com/google/seqio@f6b68cf',
         'tensorstore >= 0.1.20',
     ],
     extras_require={
